@@ -1,0 +1,19 @@
+{
+    "name": "app-geracao-contrato-dev",
+    "version": "1.0.0",
+    "description": "Geração de Contrato – Which AI: Gera contratos padronizados com base no tipo e nas partes envolvidas",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "docgo-sdk": "github:doc9-oficial/docgo-sdk-js"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0"
+    }
+}
