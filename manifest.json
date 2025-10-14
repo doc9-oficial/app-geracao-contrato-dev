@@ -21,6 +21,7 @@
     },
     "functions": {
         "gerarContrato": {
+            "name": "Gerar Contrato - Which AI",
             "script": "dist/gerarContrato.js",
             "description": "Gera contrato baseado em tipo e parâmetros",
             "category": "ia",
@@ -51,6 +52,7 @@
             ]
         },
         "personalizarContrato": {
+            "name": "Personalizar Contrato - Which AI",
             "script": "dist/personalizarContrato.js",
             "description": "Personaliza cláusulas de contrato",
             "category": "ia",
