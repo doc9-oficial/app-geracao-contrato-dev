@@ -9,23 +9,29 @@
             "footer": "As credenciais são armazenadas com segurança.",
             "link": ""
         },
-        "params": [            {
+        "params": [
+            {
                 "name": "whichToken",
                 "type": "string",
                 "inputType": "text",
                 "required": true,
                 "label": "Token do Which"
-            }       
+            }
         ]
     },
-    "functions": {        
+    "functions": {
         "gerarContrato": {
             "script": "dist/gerarContrato.js",
             "description": "Gera contrato baseado em tipo e parâmetros",
-            "category": "ia",            
+            "category": "ia",
             "values": {
                 "conteudo": "",
                 "modelo": "padrao"
+            },
+            "help": {
+                "title": "Geração de Contrato",
+                "body": "Esta função utiliza inteligência artificial para gerar um contrato padronizado com base no tipo de contrato e nas partes envolvidas. Você pode especificar o conteúdo e escolher um modelo padrão ou personalizado.",
+                "footer": "Certifique-se de revisar o contrato gerado para garantir que todas as informações estejam corretas."
             },
             "params": [
                 {
@@ -42,13 +48,19 @@
                     "required": false,
                     "label": "Modelo a ser utilizado"
                 }
-            ]        },
+            ]
+        },
         "personalizarContrato": {
             "script": "dist/personalizarContrato.js",
             "description": "Personaliza cláusulas de contrato",
             "category": "ia",
             "values": {
                 "parametro": "valor"
+            },
+            "help": {
+                "title": "Personalização de Cláusulas de Contrato",
+                "body": "Esta função utiliza inteligência artificial para personalizar cláusulas específicas em um contrato com base nos parâmetros fornecidos. Insira o parâmetro principal para obter a personalização desejada.",
+                "footer": "Revise as cláusulas personalizadas para garantir que atendam às suas necessidades."
             },
             "params": [
                 {
@@ -58,7 +70,9 @@
                     "required": true,
                     "label": "Parâmetro principal"
                 }
-            ]        }    },
+            ]
+        }
+    },
     "config": {
         "timeout": 60000,
         "max_retries": 3,
